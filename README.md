@@ -14,6 +14,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+To get your API Key, you need to sign up for an API key:(https://home.openweathermap.org/users/sign_up)
+
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.\
