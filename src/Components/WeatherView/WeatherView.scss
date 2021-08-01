@@ -1,0 +1,57 @@
+@import '../../index.scss';
+
+
+.weatherView{
+     text-align: center;
+     h2{
+          margin: 10px 2px 0px !important;
+          
+     }
+     .description{
+          text-transform: uppercase;
+     }
+     h5 {
+          margin: 15px 2px 0px !important;;
+     }
+     p {
+          margin:10px 2px 0px !important;
+          font-style: italic;
+     }
+}
+.header{
+     align-items: center;
+}
+.img{
+     width: 110px;
+     height: 110px;
+}
+.weatherBoxDay{
+     text-align: center;
+     width: 250px;
+     height: 350px;
+     background: $dayWeather;
+     mix-blend-mode: normal;
+     border-radius: 45px;
+     padding: 5px;
+     h2, h5{
+          color: white;
+     }
+}
+
+.weatherBoxNight{
+     text-align: center;
+     width: 250px;
+     height: 300px;
+     background: $nightWeather;
+     mix-blend-mode: normal;
+     border-radius: 45px;
+     padding: 5px;
+     h2, h5, p{
+          color: white;
+     }
+}
+
+
+.wind {
+     margin-top: 10px;
+}

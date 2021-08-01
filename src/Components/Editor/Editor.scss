@@ -1,0 +1,25 @@
+.titleInput, .tempInput, .windInput{
+     margin: 45px 0px;
+}
+label{
+     font-size: 18px;
+     display: block;
+     margin-bottom: 10px;
+}
+.input{
+     width: 90%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     display: inline-block;
+     border: 1px solid #ccc;
+     box-sizing: border-box;
+}
+
+.tempInput, .windInput {
+     input{
+          margin-right: 10px
+     }
+     span{
+          margin-right: 100px;
+     }
+}

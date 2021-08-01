@@ -1,0 +1,40 @@
+@import '../index.scss';
+
+.Widget {
+     width: auto;
+     max-width: 1200px;
+     margin: 10px 20px;
+  	background-color:#E5E5E5 ;
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+     .userInput, .visual{
+          width: 50%;
+          padding: 20px 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+}
+.userInput {
+     float: left;
+     
+}
+.visual {
+     float: right;
+}
+
+
+/* Use a media query to add a break point at 860px: */
+@media screen and (max-width: 860px) {
+     .Widget {
+          flex-direction: column;
+          .userInput, .visual{
+               width: 100%;
+               padding: 20px 30px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+          }
+     }
+}
