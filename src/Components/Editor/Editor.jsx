@@ -16,10 +16,9 @@ const Editor = ({title, wind, unit}) => {
                     <label>Temperature</label>
                     <div 
                          className='temperature'
-                         onChange={((e)=>unit(e.target.value))}
                     >
-                         <input className='left' type="radio" value="metric" name="temperature" defaultChecked /><span>°C</span> 
-                         <input  className='right' type="radio" value="imperial" name="temperature"/><span>°F</span>  
+                         <input className='left' type="radio" value="metric" name="temperature" defaultChecked onClick={((e)=>unit(e.target.value))} /><span>°C</span> 
+                         <input  className='right' type="radio" value="imperial" name="temperature" onClick={((e)=>unit(e.target.value))}/><span>°F</span>  
                     </div>
                </div>
                <div className='windInput'>
@@ -27,10 +26,9 @@ const Editor = ({title, wind, unit}) => {
                     
                     <div 
                          className='wind'
-                         onChange={((e)=>wind(e.target.value))}
                     >
-                         <input className='left' type="radio" value='on' name="wind" defaultChecked /><span>ON</span>  
-                         <input className='right' type="radio" value='off' name="wind" /><span>OFF</span> 
+                         <input className='left' type="radio" value='on' name="wind" defaultChecked onClick={((e)=>wind(e.target.value))} /><span>ON</span>  
+                         <input className='right' type="radio" value='off' name="wind" onClick={((e)=>wind(e.target.value))} /><span>OFF</span> 
                     </div>
                </div>
           </div>
